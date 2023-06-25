@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #007bff;
+    /* Azul primário */
+    --secondary-color: #6c757d;
+    /* Azul secundário */
+    --accent-color: #17a2b8;
+    /* Azul de destaque */
+
+    --text-color: #333333;
+    /* Cor do texto principal */
+    --background-color: #f8f8f8;
+    /* Cor de fundo */
+
+    /* Outras cores */
+    --color1: #4285f4;
+    --color2: #5f27cd;
+    --color3: #ff4081;
+    --color4: #ffc107;
+    --color5: #00bcd4;
+}

@@ -1,0 +1,42 @@
+.button {
+    max-width: 200px;
+    border-radius: 0.5rem;
+    border-color: #005f9e;
+    padding: 0.375rem;
+}
+
+.button-primary {
+    color: white;
+    border-color: #00254d;
+}
+
+.button-primary:hover {
+    border-color: #000e1f;
+}
+
+.button-secondary {
+    background-color: lightblue;
+    color: black;
+}
+
+.button-accent {
+    background-color: yellow;
+    color: black;
+}
+
+
+.input {
+    max-width: 400px;
+    border-radius: 0.5rem;
+    border-color: #005f9e;
+}
+
+.input-primary {
+    padding: 0.375rem;
+    border-color: #00254d;
+
+}
+
+.input-primary:hover {
+    border-color: #000e1f;
+}

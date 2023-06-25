@@ -1,9 +1,9 @@
 <template>
 	<div>
-		<form @submit.prevent="submitForm">
-			<Input placeholder="Digite seu nome" v-model="name" />
-			<Input placeholder="Digite seu e-mail" v-model="email" />
-			<Button @click="submitForm">Enviar</Button>
+		<form class="flex flex-col" @submit.prevent="submitForm">
+			<Input  class="my-2.5" variant="primary" placeholder="Digite seu nome" v-model="name" />
+			<Input  class="my-2.5" variant="primary" placeholder="Digite seu e-mail" v-model="email" />
+			<Button class="" variant="primary" @click="submitForm">Enviar</Button>
 		</form>
 	</div>
 </template>

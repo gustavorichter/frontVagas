@@ -1,5 +1,5 @@
 <template>
-    <button @click="handleClick" class="button-component">
+    <button @click="handleClick" :class="['button', variantClass]">
         <slot></slot>
     </button>
 </template>
@@ -12,11 +12,24 @@ export default {
             this.$emit('click');
         },
     },
+    props: {
+        variant: {
+            type: String,
+            default: 'default'
+        }
+    },
+    computed: {
+        variantClass() {
+            if (this.variant === 'primary') {
+                return 'button-primary';
+            } else if (this.variant === 'secondary') {
+                return 'button-secondary';
+            } else if (this.variant === 'accent') {
+                return 'button-accent';
+            } else {
+                return ''; // classe padrão para a variante 'default'
+            }
+        }
+    }
 };
 </script>
-
-<style scoped>
-.button-component {
-    /* Estilos do componente de botão */
-}
-</style>
