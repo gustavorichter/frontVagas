@@ -19,11 +19,11 @@ export default {
 	computed: {
 		variantClass() {
 			if (this.variant === 'primary') {
-				return 'button-primary';
+				return 'input-primary';
 			} else if (this.variant === 'secondary') {
-				return 'button-secondary';
+				return 'input-secondary';
 			} else if (this.variant === 'accent') {
-				return 'button-accent';
+				return 'input-accent';
 			} else {
 				return ''; // classe padrão para a variante 'default'
 			}
